@@ -42,9 +42,9 @@ def search(q:str):
 def filter(c :str,p:int):
     return {"category": c,"price":p}
 
-# @app.get("/items")
-# def get_items(limit:int = 10):
-#     return {"limit":limit}
+@app.get("/items")
+def get_items(limit:int = 10):
+    return {"limit":limit}
 
 
 items = [
